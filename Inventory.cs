@@ -10,6 +10,11 @@
 			items.Add("Keys");
 			items.Add("Phone");
 		}
+
+		public void addItem(string item)
+		{
+			items.Add(item);
+		}
 	}
 }
 

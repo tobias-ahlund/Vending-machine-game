@@ -32,4 +32,16 @@ foreach (var item in inventory.items)
     Console.WriteLine(item);
 }
 
+Console.WriteLine("\nPlease choose one of the items from the vending machine. Type the product name below.");
 
+string itemChoice = null;
+
+while (true)
+{
+    Console.WriteLine("\nMake sure the item exists and you have spelled it correctly.");
+    itemChoice = Console.ReadLine();
+    if (vendingMachine.checkAvailable(user, bank, itemChoice))
+    {
+        return;
+    }
+}
