@@ -1,6 +1,6 @@
 ﻿namespace VirtualVendingMachine
 {
-    public class Bank 
+    public class Bank
     {
         public int Balance = 0;
 

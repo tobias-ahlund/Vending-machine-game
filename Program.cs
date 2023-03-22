@@ -23,14 +23,9 @@ foreach (var item in vendingMachine.items)
 }
 
 // List everything in possesion of the user.
-var inventory = new Inventory();
+var inventory = new Inventory(user, bank);
 
-Console.WriteLine("\n-- User pockets content --");
-
-foreach (var item in inventory.items)
-{
-    Console.WriteLine(item);
-}
+inventory.showInventory();
 
 Console.WriteLine("\nPlease choose one of the items from the vending machine. Type the product name below.");
 
@@ -38,9 +33,9 @@ string itemChoice = null;
 
 while (true)
 {
-    Console.WriteLine("\nMake sure the item exists and you have spelled it correctly.");
     itemChoice = Console.ReadLine();
-    if (vendingMachine.checkAvailable(user, bank, itemChoice))
+
+    if (vendingMachine.Purchase(user, bank, itemChoice, inventory))
     {
         return;
     }

@@ -15,35 +15,39 @@ namespace VirtualVendingMachine
             items.Add("Chewing gum", 15);
         }
 
-        public void Purchase(User user, Bank bank, string itemChoice)
+        public bool Purchase(User user, Bank bank, string itemChoice, Inventory inventory)
         {
-            if (checkBalance(user, bank, itemChoice))
+            if (!checkAvailable(user, bank, itemChoice))
             {
-
-            }
-
-            if (checkAvailable(user, bank, itemChoice))
-            {
-
-            }
-        }
-
-        public bool checkBalance(User user, Bank bank, string itemChoice)
-        {
-            if (bank.Balance >= items[itemChoice])
-            {
-                return true;
-            }
-            else
-            {
+                Console.WriteLine($"\nMake sure {itemChoice} exists and you have spelled it correctly.");
                 return false;
             }
+
+            if (!checkBalance(bank, itemChoice))
+            {
+                Console.WriteLine($"The vending machine has {itemChoice} but your balance is too low.");
+                return false;
+            }
+
+            inventory.addToInventory(itemChoice);
+            return true;
         }
 
         public bool checkAvailable(User user, Bank bank, string itemChoice)
         {
-            if (items.ContainsKey(itemChoice)) {
-                Console.WriteLine("Item exists but you dont have enough money on your bank account.");
+            if (items.ContainsKey(itemChoice))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public bool checkBalance(Bank bank, string itemChoice)
+        {
+            if (bank.Balance >= items[itemChoice])
+            {
+                bank.Balance -= items[itemChoice];
                 return true;
             }
 
