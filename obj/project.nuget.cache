@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M85L6rbmVb1qV+nN3n30WV0igB44IVSbxgh/UrWND4Lyp91dAQqoclZZQVD/+ZLK1l6dW7eCilKGd9QeUmeD/Q==",
+  "dgSpecHash": "PY0zQmM6cXaBpUm/5T8PJEOCh8U6BbwFcA5tQnVitPLrqiNc1rctjuAoAIi88/bFKcY76Z8tOLa6jiSsd9JLfw==",
   "success": true,
-  "projectFilePath": "/Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/VirtualVendingMachine.csproj",
+  "projectFilePath": "/Users/tobias/Documents/GitHub/vending-machine/VirtualVendingMachine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

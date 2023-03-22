@@ -13,3 +13,18 @@
 /Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/obj/Debug/net7.0/VirtualVendingMachine.pdb
 /Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/obj/Debug/net7.0/VirtualVendingMachine.genruntimeconfig.cache
 /Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/obj/Debug/net7.0/ref/VirtualVendingMachine.dll
+/Users/tobias/Documents/GitHub/vending-machine/bin/Debug/net7.0/VirtualVendingMachine
+/Users/tobias/Documents/GitHub/vending-machine/bin/Debug/net7.0/VirtualVendingMachine.deps.json
+/Users/tobias/Documents/GitHub/vending-machine/bin/Debug/net7.0/VirtualVendingMachine.runtimeconfig.json
+/Users/tobias/Documents/GitHub/vending-machine/bin/Debug/net7.0/VirtualVendingMachine.dll
+/Users/tobias/Documents/GitHub/vending-machine/bin/Debug/net7.0/VirtualVendingMachine.pdb
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.csproj.AssemblyReference.cache
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.AssemblyInfoInputs.cache
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.AssemblyInfo.cs
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.csproj.CoreCompileInputs.cache
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.dll
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/refint/VirtualVendingMachine.dll
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.pdb
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/VirtualVendingMachine.genruntimeconfig.cache
+/Users/tobias/Documents/GitHub/vending-machine/obj/Debug/net7.0/ref/VirtualVendingMachine.dll

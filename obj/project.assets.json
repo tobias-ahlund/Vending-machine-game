@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/VirtualVendingMachine.csproj",
+      "projectUniqueName": "/Users/tobias/Documents/GitHub/vending-machine/VirtualVendingMachine.csproj",
       "projectName": "VirtualVendingMachine",
-      "projectPath": "/Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/VirtualVendingMachine.csproj",
+      "projectPath": "/Users/tobias/Documents/GitHub/vending-machine/VirtualVendingMachine.csproj",
       "packagesPath": "/Users/tobias/.nuget/packages/",
-      "outputPath": "/Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/obj/",
+      "outputPath": "/Users/tobias/Documents/GitHub/vending-machine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tobias/.nuget/NuGet/NuGet.Config"

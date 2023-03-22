@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VirtualVendingMachine
-build_property.ProjectDir = /Users/tobias/Documents/Yrgo/C#/Vending Machine/VendingMachine/
+build_property.ProjectDir = /Users/tobias/Documents/GitHub/vending-machine/
