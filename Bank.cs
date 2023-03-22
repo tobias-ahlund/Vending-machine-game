@@ -2,20 +2,29 @@
 {
     public class Bank
     {
+        private User User;
         public int Balance = 0;
 
-        public void Deposit(User user, int money)
+        public Bank(User user)
         {
-            Balance += money;
-            money -= user.Money;
+            User = user;
         }
 
-        public void Withdraw(User user, int money)
+        public void Deposit(int money)
+        {
+            Balance += money;
+            money -= User.Money;
+
+            Console.WriteLine($"\n-- {User.Name}'s balance --");
+            Console.WriteLine($"{Balance} SEK");
+        }
+
+        public void Withdraw(int money)
         {
             if (money <= Balance)
             {
                 Balance -= money;
-                money += user.Money;
+                money += User.Money;
             }
         }
     }

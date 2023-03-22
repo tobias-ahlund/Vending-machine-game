@@ -9,6 +9,13 @@
         {
             Name = name;
             Money = money;
-        }      
+
+            Console.WriteLine($"Hello, {this.Name}.");
+        }
+
+        public bool userLeave()
+        {
+            return false;
+        }
     }
 }

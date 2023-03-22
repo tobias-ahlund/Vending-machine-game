@@ -21,7 +21,7 @@
         {
 			items.Add(itemChoice);
 
-			Console.WriteLine($"{itemChoice} has been added to {User.Name}'s inventory.");
+			Console.WriteLine($"\n{itemChoice} has been added to {User.Name}'s inventory.");
 			Console.WriteLine($"{User.Name} has {Bank.Balance} SEK left.");
 
 			showInventory();

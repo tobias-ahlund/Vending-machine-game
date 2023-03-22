@@ -53,5 +53,15 @@ namespace VirtualVendingMachine
 
             return false;
         }
+
+        public void showItems()
+        {
+            Console.WriteLine("\n-- Vending machine content --");
+
+            foreach (var item in this.items)
+            {
+                Console.WriteLine($"{item.Key}, {item.Value} SEK");
+            }
+        }
     }
 }
