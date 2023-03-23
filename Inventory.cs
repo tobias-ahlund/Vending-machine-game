@@ -21,10 +21,7 @@
         {
 			items.Add(itemChoice);
 
-			Console.WriteLine($"\n{itemChoice} has been added to {User.Name}'s inventory.");
-			Console.WriteLine($"{User.Name} has {Bank.Balance} SEK left.");
-
-			showInventory();
+			Console.WriteLine($"\n-- {itemChoice} has been added to {User.Name}'s inventory --");
 		}
 
 		public void showInventory()
@@ -34,6 +31,29 @@
             foreach (var item in this.items)
             {
                 Console.WriteLine(item);
+            }
+
+            Console.WriteLine("--------------------------");
+        }
+
+		public void askShowInventory()
+		{
+            string reveal = null;
+
+            while (reveal == null)
+            {
+                Console.WriteLine("\nType “reveal” to reveal what's in your pockets.");
+                reveal = Console.ReadLine();
+
+                if (reveal == "reveal")
+                {
+                    this.showInventory();
+                }
+
+                if (reveal != "reveal")
+                {
+                    reveal = null;
+                }
             }
         }
     }

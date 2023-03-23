@@ -19,7 +19,7 @@ namespace VirtualVendingMachine
         {
             if (!checkAvailable(user, bank, itemChoice))
             {
-                Console.WriteLine("Buy one of the items from the vending machine by typing its name");
+                Console.WriteLine("Buy one of the items from the vending machine by typing its name.");
                 return false;
             }
 
@@ -61,6 +61,43 @@ namespace VirtualVendingMachine
             foreach (var item in this.items)
             {
                 Console.WriteLine($"{item.Key}, {item.Value} SEK");
+            }
+
+            Console.WriteLine("-----------------------------");
+        }
+
+        public void askShowItems()
+        {
+            string approach = null;
+
+            while (approach == null)
+            {
+                Console.WriteLine("Type “approach” to approach the vending machine and see its contents.");
+                approach = Console.ReadLine();
+
+                if (approach == "approach")
+                {
+                    this.showItems();
+                }
+
+                if (approach != "approach")
+                {
+                    approach = null;
+                }
+            }
+        }
+
+        public void tryPurchase(User user, Bank bank, Inventory inventory, VendingMachine vendingMachine)
+        {
+            while (true)
+            {
+                Console.WriteLine("Buy one of the items from the vending machine by typing its name.");
+                var itemChoice = Console.ReadLine();
+
+                if (this.Purchase(user, bank, itemChoice, inventory))
+                {
+                    user.typePrompts(user, bank, inventory, vendingMachine);
+                }
             }
         }
     }

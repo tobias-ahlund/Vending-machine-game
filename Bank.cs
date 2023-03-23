@@ -20,6 +20,28 @@
         {
             Console.WriteLine($"\n-- {User.Name}'s balance --");
             Console.WriteLine($"{Balance} SEK");
+            Console.WriteLine("---------------------");
+        }
+
+        public void askShowBalance()
+        {
+            string balance = null;
+
+            while (balance == null)
+            {
+                Console.WriteLine($"\nType “balance” to open bank app on phone and check balance.");
+                balance = Console.ReadLine();
+
+                if (balance == "balance")
+                {
+                    this.showBalance();
+                }
+
+                if (balance != "balance")
+                {
+                    balance = null;
+                }
+            }
         }
 
         //public void Withdraw(int money)
