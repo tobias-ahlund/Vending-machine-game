@@ -10,7 +10,7 @@
             Name = name;
             Money = money;
 
-            Console.WriteLine($"Hello, {this.Name}.");
+            Console.WriteLine($"{this.Name} is standing near the vending machine. Hungry or thirsty? {this.Name} is not quite sure.");
         }
 
         public bool userLeave()

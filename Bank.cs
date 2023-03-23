@@ -14,18 +14,21 @@
         {
             Balance += money;
             money -= User.Money;
+        }
 
+        public void showBalance()
+        {
             Console.WriteLine($"\n-- {User.Name}'s balance --");
             Console.WriteLine($"{Balance} SEK");
         }
 
-        public void Withdraw(int money)
-        {
-            if (money <= Balance)
-            {
-                Balance -= money;
-                money += User.Money;
-            }
-        }
+        //public void Withdraw(int money)
+        //{
+        //    if (money <= Balance)
+        //    {
+        //        Balance -= money;
+        //        money += User.Money;
+        //    }
+        //}
     }
 }

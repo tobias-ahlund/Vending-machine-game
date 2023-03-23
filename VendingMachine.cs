@@ -19,7 +19,7 @@ namespace VirtualVendingMachine
         {
             if (!checkAvailable(user, bank, itemChoice))
             {
-                Console.WriteLine($"\nMake sure {itemChoice} exists and you have spelled it correctly.");
+                Console.WriteLine("Buy one of the items from the vending machine by typing its name");
                 return false;
             }
 

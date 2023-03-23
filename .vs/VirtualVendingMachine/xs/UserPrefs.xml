@@ -1,3 +1,23 @@
 ﻿<Properties StartupConfiguration="{FC2E349F-3D49-4829-B6A3-835923A4D7CA}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="VendingMachine.cs">
+    <Files>
+      <File FileName="Inventory.cs" Line="24" Column="26" />
+      <File FileName="VendingMachine.cs" Line="58" Column="10" />
+      <File FileName="Program.cs" Line="24" Column="2" />
+      <File FileName="User.cs" Line="17" Column="10" />
+      <File FileName="Bank.cs" Line="19" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.VirtualVendingMachine PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
