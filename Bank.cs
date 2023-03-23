@@ -29,7 +29,7 @@
 
             while (balance == null)
             {
-                Console.WriteLine($"\nType “balance” to open bank app on phone and check balance.");
+                Console.WriteLine($"\nType “balance” to open bank app on phone and check balance.\n");
                 balance = Console.ReadLine();
 
                 if (balance == "balance")
@@ -43,14 +43,5 @@
                 }
             }
         }
-
-        //public void Withdraw(int money)
-        //{
-        //    if (money <= Balance)
-        //    {
-        //        Balance -= money;
-        //        money += User.Money;
-        //    }
-        //}
     }
 }

@@ -10,19 +10,35 @@
             Name = name;
             Money = money;
 
-            Console.WriteLine($"{this.Name} is standing near the vending machine. Hungry or thirsty? {this.Name} is not quite sure.\n");
+            Console.WriteLine($"{this.Name} is standing near the vending machine. Hungry or thirsty? {this.Name} is not quite sure.");
         }
 
-        public bool userLeave()
+        public void userLeave()
         {
-            return true;
+            Console.WriteLine($"\nThe story has come to an end. {this.Name} stole pretzels and Doritos from the machine as he/she left.");
+            Environment.Exit(0);
         }
+
+        int counter = 0;
 
         public void typePrompts(User user, Bank bank, Inventory inventory, VendingMachine vendingMachine)
         {
             string option = null;
 
-            Console.WriteLine("\nType “content”, “inventory” or “balance” to get the information you need. Type “continue” to continue shopping. When the senseless shopping spree is over, type “leave”.");
+            if (counter < 1)
+            {
+                Console.WriteLine("\nType “content”, “inventory” or “balance” to get the information you need. Type “continue” to continue shopping. When the senseless shopping spree is over, type “leave”.\n");
+            }
+            else
+            {
+                Console.WriteLine("\nType “content” for vending machine content.");
+                Console.WriteLine($"Type “inventory” for {this.Name}'s inventory.");
+                Console.WriteLine("Type “balance” to check current balance.");
+                Console.WriteLine("Type “continue” to continue shopping.");
+                Console.WriteLine("Type “leave” to leave the vending machine and exit the game.\n");
+            }
+
+            counter++;
 
             while (option == null)
             {
@@ -54,7 +70,7 @@
 
                 if (option == "leave")
                 {
-                    Console.WriteLine($"\nThis story has come to an end. {this.Name} stole pretzels and Doritos from the machine as he/she left.");
+                    userLeave();
                     return;
                 }
 
@@ -67,7 +83,7 @@
                 Console.WriteLine($"Type “inventory” for {this.Name}'s inventory.");
                 Console.WriteLine("Type “balance” to check current balance.");
                 Console.WriteLine("Type “continue” to continue shopping.");
-                Console.WriteLine("Type “leave” to leave the vending machine and exit the game.");
+                Console.WriteLine("Type “leave” to leave the vending machine and exit the game.\n");
             }
 
         }

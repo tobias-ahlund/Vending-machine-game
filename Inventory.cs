@@ -21,8 +21,10 @@
         {
 			items.Add(itemChoice);
 
-			Console.WriteLine($"\n-- {itemChoice} has been added to {User.Name}'s inventory --");
-		}
+            Console.WriteLine("\n--------------------------------------------");
+			Console.WriteLine($"{itemChoice} has been added to {User.Name}'s inventory.");
+            Console.WriteLine("--------------------------------------------");
+        }
 
 		public void showInventory()
 		{
@@ -42,7 +44,7 @@
 
             while (reveal == null)
             {
-                Console.WriteLine("\nType “reveal” to reveal what's in your pockets.");
+                Console.WriteLine("\nType “reveal” to reveal what's in your pockets.\n");
                 reveal = Console.ReadLine();
 
                 if (reveal == "reveal")
