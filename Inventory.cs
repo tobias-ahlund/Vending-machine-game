@@ -2,8 +2,8 @@
 {
 	public class Inventory
 	{
-		public User User;
-		public Bank Bank;
+		private User User { get; set; }
+		private Bank Bank { get; set; }
 
 		public List<string> items = new List<string>();
 

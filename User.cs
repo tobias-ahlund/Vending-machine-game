@@ -2,8 +2,8 @@
 {
     public class User
     {
-        public string Name;
-        public int Money;
+        public string Name { get; set; }
+        public int Money { get; set; }
 
         public User(string name, int money)
         {

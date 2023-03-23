@@ -8,8 +8,6 @@ var vendingMachine = new VendingMachine(user, bank, inventory);
 
 bank.Deposit(user.Money);
 
-Console.WriteLine(user.Money);
-
 vendingMachine.AskShowItems();
 inventory.AskShowInventory();
 bank.AskShowBalance();

@@ -4,11 +4,11 @@ namespace VirtualVendingMachine
 {
     public class VendingMachine
     {
-        public Bank bank { get; }
-        public User user;
-        public Inventory inventory;
+        private Bank bank { get; set; }
+        private User user { get; set; }
+        private Inventory inventory { get; set; }
 
-        public Dictionary<string, int> items = new Dictionary<string, int>();
+        private Dictionary<string, int> items = new Dictionary<string, int>();
 
         public VendingMachine(User user, Bank bank, Inventory inventory)
         {

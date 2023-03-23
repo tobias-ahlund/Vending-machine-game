@@ -2,7 +2,7 @@
 {
     public class Bank
     {
-        private User User;
+        private User User { get; set; }
         public int Balance = 0;
 
         public Bank(User user)
