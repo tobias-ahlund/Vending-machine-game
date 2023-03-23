@@ -1,27 +1,27 @@
 ﻿namespace VirtualVendingMachine
 {
     public class User
-    { 
-        public string Name { get; }
-        public int Money { get; }
+    {
+        public string Name;
+        public int Money;
 
         public User(string name, int money)
         {
-            Name = name;
-            Money = money;
+            this.Name = name;
+            this.Money = money;
 
             Console.WriteLine($"{this.Name} is standing near the vending machine. Hungry or thirsty? {this.Name} is not quite sure.");
         }
 
-        public void userLeave()
+        public void UserLeave()
         {
-            Console.WriteLine($"\nThe story has come to an end. {this.Name} stole pretzels and Doritos from the machine as he/she left.");
+            Console.WriteLine($"\nThe story has come to an end. {this.Name} stole snus and a Fantomen magazine from the vending machine as he/she left.");
             Environment.Exit(0);
         }
 
         int counter = 0;
 
-        public void typePrompts(User user, Bank bank, Inventory inventory, VendingMachine vendingMachine)
+        public void TypePrompts(User user, Bank bank, Inventory inventory, VendingMachine vendingMachine)
         {
             string option = null;
 
@@ -46,31 +46,31 @@
 
                 if (option == "content")
                 {
-                    vendingMachine.showItems();
+                    vendingMachine.ShowItems();
                     option = null;
                 }
 
                 if (option == "inventory")
                 {
-                    inventory.showInventory();
+                    inventory.ShowInventory();
                     option = null;
                 }
 
                 if (option == "balance")
                 {
-                    bank.showBalance();
+                    bank.ShowBalance();
                     option = null;
                 }
 
                 if (option == "continue")
                 {
-                    vendingMachine.tryPurchase(user, bank, inventory, vendingMachine);
+                    vendingMachine.TryPurchase(user, bank, inventory, vendingMachine);
                     option = null;
                 }
 
                 if (option == "leave")
                 {
-                    userLeave();
+                    UserLeave();
                     return;
                 }
 

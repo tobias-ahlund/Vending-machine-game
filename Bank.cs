@@ -12,18 +12,18 @@
 
         public void Deposit(int money)
         {
-            Balance += money;
-            money -= User.Money;
+            this.Balance += money;
+            this.User.Money -= money;
         }
 
-        public void showBalance()
+        public void ShowBalance()
         {
-            Console.WriteLine($"\n-- {User.Name}'s balance --");
-            Console.WriteLine($"{Balance} SEK");
+            Console.WriteLine($"\n-- {this.User.Name}'s balance --");
+            Console.WriteLine($"{this.Balance} SEK");
             Console.WriteLine("---------------------");
         }
 
-        public void askShowBalance()
+        public void AskShowBalance()
         {
             string balance = null;
 
@@ -34,7 +34,7 @@
 
                 if (balance == "balance")
                 {
-                    this.showBalance();
+                    this.ShowBalance();
                 }
 
                 if (balance != "balance")

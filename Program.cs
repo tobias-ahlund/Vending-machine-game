@@ -1,16 +1,18 @@
 ﻿using System.Numerics;
 using VirtualVendingMachine;
 
-var user = new User("Petyr", 0);
-var vendingMachine = new VendingMachine();
+var user = new User("Petyr", 100);
 var bank = new Bank(user);
 var inventory = new Inventory(user, bank);
+var vendingMachine = new VendingMachine(user, bank, inventory);
 
 bank.Deposit(user.Money);
 
-vendingMachine.askShowItems();
-inventory.askShowInventory();
-bank.askShowBalance();
+Console.WriteLine(user.Money);
 
-vendingMachine.tryPurchase(user, bank, inventory, vendingMachine);
+vendingMachine.AskShowItems();
+inventory.AskShowInventory();
+bank.AskShowBalance();
+
+vendingMachine.TryPurchase(user, bank, inventory, vendingMachine);
 

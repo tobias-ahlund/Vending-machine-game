@@ -2,22 +2,22 @@
 {
 	public class Inventory
 	{
-		private User User;
-		private Bank Bank;
+		public User User;
+		public Bank Bank;
 
 		public List<string> items = new List<string>();
 
 		public Inventory(User user, Bank bank)
 		{
-			User = user;
-			Bank = bank;
+			this.User = user;
+			this.Bank = bank;
 
 			items.Add("Pocket lint");
 			items.Add("Keys");
 			items.Add("Phone");
 		}
 
-        public void addToInventory(string itemChoice)
+        public void AddToInventory(string itemChoice)
         {
 			items.Add(itemChoice);
 
@@ -26,9 +26,9 @@
             Console.WriteLine("--------------------------------------------");
         }
 
-		public void showInventory()
+		public void ShowInventory()
 		{
-            Console.WriteLine("\n-- User pockets content --");
+            Console.WriteLine("\n-- User's pocket contents --");
 
             foreach (var item in this.items)
             {
@@ -38,7 +38,7 @@
             Console.WriteLine("--------------------------");
         }
 
-		public void askShowInventory()
+		public void AskShowInventory()
 		{
             string reveal = null;
 
@@ -49,7 +49,7 @@
 
                 if (reveal == "reveal")
                 {
-                    this.showInventory();
+                    this.ShowInventory();
                 }
 
                 if (reveal != "reveal")
